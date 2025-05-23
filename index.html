@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="1">
+            <div class="back" id="back">
+                <svg fill="#e5fffb" height="300px" width="300px" stroke="#e5fffb" stroke-width="0.00026676"
+                    viewBox="0 0 30 30">
+                    <path
+                        d="M26.105,21.891c-0.229,0-0.439-0.131-0.529-0.346l0,0c-0.066-0.156-1.716-3.857-7.885-4.59 c-1.285-0.156-2.824-0.236-4.693-0.25v4.613c0,0.213-0.115,0.406-0.304,0.508c-0.188,0.098-0.413,0.084-0.588-0.033L0.254,13.815 C0.094,13.708,0,13.528,0,13.339c0-0.191,0.094-0.365,0.254-0.477l11.857-7.979c0.175-0.121,0.398-0.129,0.588-0.029 c0.19,0.102,0.303,0.295,0.303,0.502v4.293c2.578,0.336,13.674,2.33,13.674,11.674c0,0.271-0.191,0.508-0.459,0.562 C26.18,21.891,26.141,21.891,26.105,21.891z">
+                    </path>
+                </svg>
+            </div>
+            <div class="welcome">
+                <span>
+                    <h1>Welcome!</h1>
+                    <p>
+                        Teachers were waiting
+                    </p>
+                </span>
+                <a href="#2"><button class="button get-started">Get Started</button></a>
+            </div>
+        </section>
+        <section id="2">
+            <form class="box">
+                <div class="box slide-out" id="error">
+                    <p id="errormsg"></p>
+                </div>
+                <label for="name">Name: </label>
+                <div class="shadow 0">
+                    <svg class="circle 0" fill=rgba(0,0,0,.5) height="25px" width="25px" viewBox="0 0 490 490">
+                        <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 
+                        489.292,457.678 277.331,245.004 489.292,32.337 " />
+                    </svg>
+                </div>
+                <input type="text" id="name" required placeholder="John Doe" minlength="5" maxlength="40"
+                    autocomplete="name">
+                <label for="email">Email: </label>
+                <div class="shadow 1">
+                    <svg class="circle 1" fill=rgba(0,0,0,.5) height="25px" width="25px" viewBox="0 0 490 490">
+                        <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 
+                        489.292,457.678 277.331,245.004 489.292,32.337 " />
+                    </svg>
+                </div>
+                <input type="email" id="email" required placeholder="iamastudent@gmail.com" minlength="5" maxlength="40"
+                    autocomplete="email">
+                <label for="subject">Subject: </label>
+                <div class="shadow 2">
+                    <svg class="circle 2" fill=rgba(0,0,0,.5) height="25px" width="25px" viewBox="0 0 490 490">
+                        <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 
+                        489.292,457.678 277.331,245.004 489.292,32.337 " />
+                    </svg>
+                </div>
+                <select name="subject" id="subject" required>
+                    <option value="" selected hidden disabled></option>
+                    <option value="Physics">Physics</option>
+                    <option value="Math">Math</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Database">Database</option>
+                    <option value="D.Structure">D.Structure</option>
+                    <option value="IT">IT</option>
+                </select>
+
+                <input type="submit" value="Send" class="button" id="submit">
+            </form>
+        </section>
+        <section id="3">
+            <div class="grid">
+
+            </div>
+            </div>
+            <div class="button get-started send">Send</div>
+        </section>
+    </main>
+</body>
+<script src="validate.js"></script>
+
+</html>
